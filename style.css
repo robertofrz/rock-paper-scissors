@@ -1,0 +1,50 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  background-color: rgb(158, 59, 250);
+  color: white;
+}
+button {
+  border: none;
+  background-color: rgb(158, 59, 250);
+  font-size: 7rem;
+}
+h2 {
+  text-align: center;
+}
+#options,
+#main {
+  display: flex;
+  justify-content: center;
+}
+
+#round {
+  display: flex;
+  gap: 50px;
+  justify-content: center;
+  align-items: center;
+}
+
+#rockoption:hover,
+#paperoption:hover,
+#scissorsoption:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+#game {
+  width: 40%;
+  text-align: center;
+}
+
+#finalscore {
+  width: 30%;
+  text-align: center;
+}
+#rules {
+  width: 30%;
+}
+li {
+  list-style: none;
+}

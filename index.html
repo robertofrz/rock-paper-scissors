@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rock, Paper & Scissors</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body id="main">
+    <section id="rules">
+      <h2>RULES</h2>
+      <p>
+        The rules of "Rock, Paper, Scissors" are simple and follow a cyclical
+        pattern where each choice beats one and loses to another:
+      </p>
+      <ul>
+        <li><strong>Rock</strong></li>
+        <ul>
+          <li>Beats: Scissors (crushes them).</li>
+          <li>Loses to: Paper (is covered by it).</li>
+        </ul>
+        <li><strong>Paper</strong></li>
+        <ul>
+          <li>Beats: Rock (covers it).</li>
+          <li>Loses to: Scissors (is cut by them).</li>
+        </ul>
+        <li><strong>Scissors</strong></li>
+        <ul>
+          <li>Beats: Paper (cuts it).</li>
+          <li>Loses to: Rock (is crushed by it).</li>
+        </ul>
+      </ul>
+
+      <p>
+        If both players choose the same option, it's a <strong>tie</strong>.
+      </p>
+      <p>
+        The game is played in rounds, and the winner of each round scores a
+        point.
+      </p>
+      <p><strong>When someone scores 5 points, we have a winner!</strong></p>
+    </section>
+    <section id="game">
+      <h1>ROCK, PAPER and SCISSORS</h1>
+      <h2>Choose one:</h2>
+      <div id="options">
+        <div><button id="rockoption">&#x270A;</button></div>
+        <div><button id="paperoption">&#x1FAF2;</button></div>
+        <div><button id="scissorsoption">&#x270C;</button></div>
+      </div>
+      <div id="round">
+        <div>
+          <h2>Computer</h2>
+          <button id="comp"></button>
+        </div>
+        <p>VS.</p>
+        <div>
+          <h2>You</h2>
+          <button id="human"></button>
+        </div>
+      </div>
+      <p id="result"></p>
+    </section>
+    <section id="finalscore">
+      <div>
+        <h2>SCORE</h2>
+        <p id="score">
+          <strong>Computer</strong>: 0 <br />
+          <strong>You</strong>: 0
+        </p>
+      </div>
+    </section>
+    <script src="script.js"></script>
+  </body>
+</html>
